@@ -6,8 +6,9 @@
 
 - src/bci_trial_safety/domain.py：领域对象与时间约定。
 - src/bci_trial_safety/service.py：事务、状态迁移、权限和幂等边界。
+- src/bci_trial_safety/trial.py：试验会话服务，把受试者授权、设备校准、控制指令和停止操作放在同一条带哈希链的审计事件表上。
 - src/bci_trial_safety/api.py：本地 HTTP 接口。
-- tests/：状态、版本、权限和重复请求测试。
+- tests/：状态、版本、权限、重复请求与试验会话安全不变量测试。
 
 ## 测试
 
